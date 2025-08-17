@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambika & Co. — Plumbing Services in Indore</title>
+  <meta name="description"
+    content="Ambika & Co. offers 24×7 premium plumbing services across Indore: installations, repairs, replacements, and maintenance. Call 9826210689." />
+  <meta name="theme-color" content="#1B4F91" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1B4F91',
+            accent: '#C89B3C',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeUp { animation: fadeUp 1s ease-out forwards; }
+    .animate-delay-1 { animation-delay: 0.3s; }
+    .animate-delay-2 { animation-delay: 0.6s; }
+  </style>
+</head>
+
+<body class="bg-[#F9F6F0] font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-6">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="logo_transparent.png" alt="Logo" class="w-16 h-16 rounded-lg shadow-sm border border-gray-200 object-contain">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-extrabold tracking-wide text-primary">Ambika & Co.</h1>
+          <p class="text-sm md:text-base font-medium text-gray-600 italic">Where Every Drop Counts</p>
+        </div>
+      </div>
+
+      <!-- Nav Menu -->
+      <nav>
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-primary focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <ul id="menu" class="hidden md:flex space-x-8 font-semibold text-gray-700">
+          <li><a href="#" class="hover:text-accent transition-colors duration-300">Home</a></li>
+          <li><a href="services.html" class="hover:text-accent transition-colors duration-300">Services</a></li>
+          <li><a href="about.html" class="hover:text-accent transition-colors duration-300">About</a></li>
+          <li><a href="contact.html" class="hover:text-accent transition-colors duration-300">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Call Button -->
+      <a href="tel:9826210689"
+        class="ml-4 bg-gradient-to-r from-accent to-[#FFD97D] text-white px-5 py-2 rounded-lg font-bold shadow-md hover:scale-105 transition-transform duration-300 hidden md:inline-block">
+        Call Now
+      </a>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="md:hidden hidden bg-white/90 px-6 py-4 space-y-4 shadow-lg">
+      <li><a href="#" class="block text-gray-700 font-semibold hover:text-accent">Home</a></li>
+      <li><a href="#services" class="block text-gray-700 font-semibold hover:text-accent">Services</a></li>
+      <li><a href="#about" class="block text-gray-700 font-semibold hover:text-accent">About</a></li>
+      <li><a href="#contact" class="block text-gray-700 font-semibold hover:text-accent">Contact</a></li>
+      <li><a href="tel:9826210689" class="block bg-gradient-to-r from-accent to-[#FFD97D] text-white px-4 py-2 rounded-lg font-bold text-center">Call Now</a></li>
+    </ul>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero relative h-[85vh] sm:h-[70vh] flex flex-col justify-center items-center text-center px-6 bg-cover bg-center"
+    style="background-image: url('your-hero-bg.jpg');">
+    <div class="absolute inset-0 bg-gradient-to-b from-primary/70 via-black/60 to-black/70"></div>
+    <div class="relative z-10 max-w-3xl">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-md mb-6 tracking-wider opacity-0 animate-fadeUp">
+        WHERE EVERY DROP COUNTS
+      </h1>
+      <p class="text-lg sm:text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed opacity-0 animate-fadeUp animate-delay-1">
+        20+ years of plumbing excellence — 24×7 emergency services across Indore
+      </p>
+      <a href="#contact"
+        class="inline-block bg-gradient-to-r from-accent to-[#FFD97D] text-primary px-8 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 hover:shadow-2xl transition-all duration-300 opacity-0 animate-fadeUp animate-delay-2">
+        Book a Call
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-20 bg-[#F9F6F0] text-center px-6">
+    <div class="max-w-5xl mx-auto space-y-6">
+      <p class="text-lg text-gray-700 leading-relaxed">
+        At <strong>Ambika & Co.</strong>, we bring over <span class="font-semibold text-accent">20 years of experience</span>
+        to every project. From quick repairs to complex installations, our expert team delivers reliable, high-quality plumbing solutions.
+      </p>
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Available <span class="italic text-accent">24×7</span>, we ensure your home and business always run smoothly — because <em>every drop counts</em>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-8">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="mb-2">© 2025 Ambika & Co. | All Rights Reserved</p>
+      <p class="mb-4">Payment Methods: UPI, Cheques, Cash</p>
+
+      <div class="space-y-2 mb-6">
+        <p><i class="fa-solid fa-phone text-accent mr-2"></i><a href="tel:9826210689" class="hover:text-accent">+91 98262 10689</a></p>
+        <p><i class="fa-solid fa-envelope text-accent mr-2"></i><a href="mailto:sanjaybrhamane22@gmail.com" class="hover:text-accent">sanjaybrhamane22@gmail.com</a></p>
+      </div>
+
+      <div class="flex justify-center space-x-6 text-2xl">
+        <a href="https://instagram.com/ambika_co" target="_blank" class="hover:text-accent"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/919826210689" target="_blank" class="hover:text-accent"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:sanjaybrhamane22@gmail.com" target="_blank" class="hover:text-accent"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
